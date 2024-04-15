@@ -1,0 +1,260 @@
+TOPIC- INSTAGRAM 
+
+PROBLEM STAMENT 
+Further improvement in Instagram using SQL
+Sure, I'll provide some sample data to fill in the "User" table with 25 entries:
+table no 1
+
+| User ID | Username | Password | Date of Birth | Email              |
+|---------|----------|----------|---------------|--------------------|
+| 1       | user1    | password1| 1990-05-15    | user1@example.com  |
+| 2       | user2    | password2| 1988-09-22    | user2@example.com  |
+| 3       | user3    | password3| 1995-12-10    | user3@example.com  |
+| 4       | user4    | password4| 1987-03-28    | user4@example.com  |
+| 5       | user5    | password5| 1992-07-04    | user5@example.com  |
+| 6       | user6    | password6| 1989-11-19    | user6@example.com  |
+| 7       | user7    | password7| 1994-02-09    | user7@example.com  |
+| 8       | user8    | password8| 1991-06-25    | user8@example.com  |
+| 9       | user9    | password9| 1986-08-12    | user9@example.com  |
+| 10      | user10   | password10| 1993-10-30   | user10@example.com |
+| 11      | user11   | password11| 1985-04-17   | user11@example.com |
+| 12      | user12   | password12| 1998-01-08   | user12@example.com |
+| 13      | user13   | password13| 1984-07-26   | user13@example.com |
+| 14      | user14   | password14| 1997-11-13   | user14@example.com |
+| 15      | user15   | password15| 1983-09-05   | user15@example.com |
+| 16      | user16   | password16| 1996-12-22   | user16@example.com |
+| 17      | user17   | password17| 1982-02-14   | user17@example.com |
+| 18      | user18   | password18| 1999-05-31   | user18@example.com |
+| 19      | user19   | password19| 1981-10-08   | user19@example.com |
+| 20      | user20   | password20| 2000-03-16   | user20@example.com |
+| 21      | user21   | password21| 1980-01-25   | user21@example.com |
+| 22      | user22   | password22| 2001-08-02   | user22@example.com |
+| 23      | user23   | password23| 1979-06-11   | user23@example.com |
+| 24      | user24   | password24| 2002-09-28   | user24@example.com |
+| 25      | user25   | password25| 1978-04-03   | user25@example.com |
+
+
+table no 2
+Certainly! Below is a sample data for the "Post" table with 25 entries:
+
+| Post ID | User ID | Likes | Caption                      | Timestamp           |
+|---------|---------|-------|------------------------------|---------------------|
+| 1       | 1       | 15    | Beautiful sunset             | 2024-04-01 18:30:00 |
+| 2       | 2       | 10    | Delicious brunch             | 2024-04-02 09:45:00 |
+| 3       | 3       | 20    | Exploring new places         | 2024-04-03 14:20:00 |
+| 4       | 4       | 8     | Relaxing weekend getaway     | 2024-04-04 11:10:00 |
+| 5       | 5       | 12    | Morning coffee vibes         | 2024-04-05 08:00:00 |
+| 6       | 6       | 18    | Hiking adventure             | 2024-04-06 16:45:00 |
+| 7       | 7       | 25    | Family time at the beach     | 2024-04-07 10:30:00 |
+| 8       | 8       | 9     | City skyline at night        | 2024-04-08 20:15:00 |
+| 9       | 9       | 14    | Pet lover's paradise         | 2024-04-09 12:00:00 |
+| 10      | 10      | 30    | Weekend vibes with friends    | 2024-04-10 09:00:00 |
+| 11      | 11      | 11    | Art exhibition               | 2024-04-11 15:30:00 |
+| 12      | 12      | 19    | Sunset by the lake           | 2024-04-12 18:00:00 |
+| 13      | 13      | 22    | Cycling through the countryside | 2024-04-13 07:45:00 |
+| 14      | 14      | 16    | Bookworm's corner            | 2024-04-14 14:10:00 |
+| 15      | 15      | 28    | Cooking experiments           | 2024-04-15 11:20:00 |
+| 16      | 16      | 7     | Movie night with friends     | 2024-04-16 19:00:00 |
+| 17      | 17      | 13    | Morning yoga session         | 2024-04-17 06:30:00 |
+| 18      | 18      | 24    | Road trip adventures         | 2024-04-18 08:45:00 |
+| 19      | 19      | 17    | DIY home decor               | 2024-04-19 13:55:00 |
+| 20      | 20      | 21    | Beach bonfire                | 2024-04-20 21:00:00 |
+| 21      | 21      | 11    | Music festival vibes         | 2024-04-21 16:30:00 |
+| 22      | 22      | 26    | Coffee shop stories          | 2024-04-22 10:00:00 |
+| 23      | 23      | 8     | Mountain trekking            | 2024-04-23 07:15:00 |
+| 24      | 24      | 15    | Gardening joys               | 2024-04-24 12:40:00 |
+| 25      | 25      | 23    | Weekend farmers market       | 2024-04-25 09:30:00 |
+
+table no 3 
+Certainly! Below is a sample data for the "Likes" table with 25 entries:
+
+| Like ID | User ID | Timestamp           | Post ID |
+|---------|---------|---------------------|---------|
+| 1       | 1       | 2024-04-01 18:35:00 | 5       |
+| 2       | 2       | 2024-04-02 10:00:00 | 8       |
+| 3       | 3       | 2024-04-03 14:25:00 | 12      |
+| 4       | 4       | 2024-04-04 11:20:00 | 15      |
+| 5       | 5       | 2024-04-05 08:10:00 | 20      |
+| 6       | 6       | 2024-04-06 16:50:00 | 25      |
+| 7       | 7       | 2024-04-07 10:35:00 | 2       |
+| 8       | 8       | 2024-04-08 20:20:00 | 9       |
+| 9       | 9       | 2024-04-09 12:05:00 | 14      |
+| 10      | 10      | 2024-04-10 09:05:00 | 18      |
+| 11      | 11      | 2024-04-11 15:35:00 | 22      |
+| 12      | 12      | 2024-04-12 18:05:00 | 1       |
+| 13      | 13      | 2024-04-13 07:50:00 | 4       |
+| 14      | 14      | 2024-04-14 14:15:00 | 7       |
+| 15      | 15      | 2024-04-15 11:25:00 | 10      |
+| 16      | 16      | 2024-04-16 19:05:00 | 13      |
+| 17      | 17      | 2024-04-17 06:35:00 | 16      |
+| 18      | 18      | 2024-04-18 08:50:00 | 19      |
+| 19      | 19      | 2024-04-19 14:00:00 | 21      |
+| 20      | 20      | 2024-04-20 21:05:00 | 24      |
+| 21      | 21      | 2024-04-21 16:35:00 | 3       |
+| 22      | 22      | 2024-04-22 10:05:00 | 6       |
+| 23      | 23      | 2024-04-23 07:20:00 | 11      |
+| 24      | 24      | 2024-04-24 12:45:00 | 17      |
+| 25      | 25      | 2024-04-25 09:35:00 | 23      |
+
+table no 4
+Here's a sample data for the "Comments" table with 25 entries:
+
+| Comment ID | Post ID | User ID | Timestamp           |
+|------------|---------|---------|---------------------|
+| 1          | 5       | 1       | 2024-04-01 18:40:00 |
+| 2          | 8       | 2       | 2024-04-02 10:15:00 |
+| 3          | 12      | 3       | 2024-04-03 14:30:00 |
+| 4          | 15      | 4       | 2024-04-04 11:25:00 |
+| 5          | 20      | 5       | 2024-04-05 08:15:00 |
+| 6          | 25      | 6       | 2024-04-06 16:55:00 |
+| 7          | 2       | 7       | 2024-04-07 10:40:00 |
+| 8          | 9       | 8       | 2024-04-08 20:25:00 |
+| 9          | 14      | 9       | 2024-04-09 12:10:00 |
+| 10         | 18      | 10      | 2024-04-10 09:10:00 |
+| 11         | 22      | 11      | 2024-04-11 15:40:00 |
+| 12         | 1       | 12      | 2024-04-12 18:05:00 |
+| 13         | 4       | 13      | 2024-04-13 07:55:00 |
+| 14         | 7       | 14      | 2024-04-14 14:20:00 |
+| 15         | 10      | 15      | 2024-04-15 11:30:00 |
+| 16         | 13      | 16      | 2024-04-16 19:05:00 |
+| 17         | 16      | 17      | 2024-04-17 06:40:00 |
+| 18         | 19      | 18      | 2024-04-18 08:55:00 |
+| 19         | 21      | 19      | 2024-04-19 14:05:00 |
+| 20         | 24      | 20      | 2024-04-20 21:10:00 |
+| 21         | 3       | 21      | 2024-04-21 16:35:00 |
+| 22         | 6       | 22      | 2024-04-22 10:10:00 |
+| 23         | 11      | 23      | 2024-04-23 07:25:00 |
+| 24         | 17      | 24      | 2024-04-24 12:50:00 |
+| 25         | 23      | 25      | 2024-04-25 09:40:00 |
+
+table no 5
+Here's a sample data for the "Follower" table with 25 entries:
+
+| Follow ID | Following ID | Follower ID | Timestamp           |
+|-----------|--------------|-------------|---------------------|
+| 1         | 1            | 2           | 2024-04-01 18:45:00 |
+| 2         | 2            | 3           | 2024-04-02 10:20:00 |
+| 3         | 3            | 4           | 2024-04-03 14:35:00 |
+| 4         | 4            | 5           | 2024-04-04 11:30:00 |
+| 5         | 5            | 6           | 2024-04-05 08:20:00 |
+| 6         | 6            | 7           | 2024-04-06 17:00:00 |
+| 7         | 7            | 8           | 2024-04-07 10:45:00 |
+| 8         | 8            | 9           | 2024-04-08 20:30:00 |
+| 9         | 9            | 10          | 2024-04-09 12:15:00 |
+| 10        | 10           | 11          | 2024-04-10 09:15:00 |
+| 11        | 11           | 12          | 2024-04-11 15:45:00 |
+| 12        | 12           | 13          | 2024-04-12 18:10:00 |
+| 13        | 13           | 14          | 2024-04-13 08:00:00 |
+| 14        | 14           | 15          | 2024-04-14 14:25:00 |
+| 15        | 15           | 16          | 2024-04-15 11:35:00 |
+| 16        | 16           | 17          | 2024-04-16 19:10:00 |
+| 17        | 17           | 18          | 2024-04-17 06:45:00 |
+| 18        | 18           | 19          | 2024-04-18 09:00:00 |
+| 19        | 19           | 20          | 2024-04-19 14:10:00 |
+| 20        | 20           | 21          | 2024-04-20 21:15:00 |
+| 21        | 21           | 22          | 2024-04-21 16:40:00 |
+| 22        | 22           | 23          | 2024-04-22 10:15:00 |
+| 23        | 23           | 24          | 2024-04-23 07:30:00 |
+| 24        | 24           | 25          | 2024-04-24 12:55:00 |
+| 25        | 25           | 1           | 2024-04-25 09:45:00 |
+
+
+ here are 30 SQL questions based on the provided data model:
+
+**User Table:**
+- 1. How many users are there in the database?
+- 2. Retrieve the usernames of all users.
+- 3. Find the user with UserID 5.
+- 4. List the users whose names contain the letter 'a'.
+- 5. Count the number of users who have provided their email addresses.
+
+**Post Table:**
+- 6. How many posts have been made in total?
+- 7. Retrieve the details of the post with PostID 10.
+- 8. List the posts made by the user with UserID 7.
+- 9. Find the most recent post.
+- 10. Count the number of posts that have captions.
+
+**Like Table:**
+- 11. How many likes have been given in total?
+- 12. Retrieve all likes given by the user with UserID 3.
+- 13. Find the users who have liked the post with PostID 15.
+- 14. Count the number of likes received by the post with PostID 20.
+- 15. List the most recent likes.
+
+**Comment Table:**
+- 16. How many comments have been made in total?
+- 17. Retrieve all comments made by the user with UserID 8.
+- 18. Find the users who have commented on the post with PostID 25.
+- 19. Count the number of comments on the post with PostID 30.
+- 20. List the most recent comments.
+
+**Follow Table:**
+- 21. How many follow relationships exist in the database?
+- 22. Retrieve all followers of the user with UserID 12.
+- 23. Find the users followed by the user with UserID 18.
+- 24. Count the number of followers of the user with UserID 22.
+- 25. List the most recent follow relationships.
+
+**Combined Queries:**
+- 26. Retrieve the usernames of users who have liked the post with PostID 5.
+- 27. Find the names of users who have commented on the post with PostID 10.
+- 28. List the captions of posts made by users who are followed by the user with UserID 15.
+- 29. Count the number of posts made by users who have not provided their email addresses.
+- 30. Retrieve the usernames of users who have liked and commented on the post with PostID 20.
+
+
+
+
+-- User table
+CREATE TABLE User (
+    UserID INT PRIMARY KEY AUTO_INCREMENT,
+    Username VARCHAR(50) UNIQUE NOT NULL,
+    Name VARCHAR(100) NOT NULL,
+    Email VARCHAR(100) UNIQUE NOT NULL,
+    Bio TEXT,
+    ProfilePicture VARCHAR(255)
+);
+
+-- Post table
+CREATE TABLE Post (
+    PostID INT PRIMARY KEY AUTO_INCREMENT,
+    UserID INT,
+    Image VARCHAR(255) NOT NULL,
+    Caption TEXT,
+    Timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (UserID) REFERENCES User(UserID)
+);
+
+-- Like table
+CREATE TABLE Like (
+    LikeID INT PRIMARY KEY AUTO_INCREMENT,
+    UserID INT,
+    PostID INT,
+    Timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (UserID) REFERENCES User(UserID),
+    FOREIGN KEY (PostID) REFERENCES Post(PostID)
+);
+
+-- Comment table
+CREATE TABLE Comment (
+    CommentID INT PRIMARY KEY AUTO_INCREMENT,
+    UserID INT,
+    PostID INT,
+    Text TEXT,
+    Timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (UserID) REFERENCES User(UserID),
+    FOREIGN KEY (PostID) REFERENCES Post(PostID)
+);
+
+-- Follow table
+CREATE TABLE Follow (
+    FollowID INT PRIMARY KEY AUTO_INCREMENT,
+    FollowerID INT,
+    FollowingID INT,
+    Timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (FollowerID) REFERENCES User(UserID),
+    FOREIGN KEY (FollowingID) REFERENCES User(UserID)
+);
+
+
